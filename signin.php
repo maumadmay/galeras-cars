@@ -18,8 +18,8 @@
         if($nreg > 0){
             header('refresh:0;url = index.html');
         }else{
-            echo "<script>alert('Email or password not found, sending to sing yo ass up 🤣🤣')</script>";
-            header('refresh:0;url = register.html');
+            echo "<script>alert('Email or password not found, sending to log in yo ass 🤣🤣')</script>";
+            header('refresh:0;url = login.html');
         }  
     }else{
         echo "Query error!! 😭😭😭";
