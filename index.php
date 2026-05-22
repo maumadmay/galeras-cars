@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION ['idUser'])){
+        header('refresh:0;url=login.html');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +27,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/headeImg.png" />
 
 </head>
 
@@ -33,9 +42,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                   <i class="fas fa-car-side"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Home <sup>:)</sup></div>
             </a>
 
             <!-- Divider -->
@@ -43,11 +52,10 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-
             <!-- Divider -->
             <hr class="sidebar-divider">
 

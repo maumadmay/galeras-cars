@@ -14,7 +14,7 @@
     $enc_pass = md5($pswd);
     //$enc_pass = password_hash($pswd, PASSWORD_BCRYPT);
     //query to insert into sql
-    $sql = "INSERT INTO users (firstname, lastname, email, mobile_phone, pasword) 
+    $sql = "INSERT INTO users (firstname, lastname, email, mobile_phone, password) 
     VALUES ('$f_name', '$l_name', '$mail', '$phone', '$enc_pass')";
 
     //rama 1
