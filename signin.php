@@ -16,7 +16,7 @@
     //preparar query sql
     $sql_login = "SELECT u.id, 
                          u.email, 
-                         u.firstname || '' || u.lastname as fullname 
+                         u.firstname || ' ' || u.lastname as fullname 
                   FROM users u 
                   WHERE u.email = '$mail' AND 
                         u.password = '$psswd'";

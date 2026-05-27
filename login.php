@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION ['idUser'])){
+        header('refresh:0;url=index.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
